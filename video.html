@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video with Audio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .video-container {
+            text-align: center;
+        }
+        .video-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        video {
+            max-width: 100%;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <h2>Watch This Video</h2>
+        <video controls>
+            <source src="sample-video.mp4" type="video/mp4">
+            <source src="sample-video.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+</html>
